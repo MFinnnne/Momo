@@ -172,6 +172,8 @@ class AllocStep:
             logging.error(f"获取车辆信息错误：{e}")
             self.app.after(0, lambda: show_notification(f"获取车辆信息错误：{e}"))
 
+
+
     def sync_info(self, booking_info_list, result):
         if result['content']['success'] and result is not None:
             for book_info in result['content']['result']['booking_list']:
@@ -256,8 +258,7 @@ class AllocStep:
                     var tagItems = document.querySelectorAll(".tag-item");
                     if (tagItems.length >= 4) {{
                         // 获取第三个 tag-item（索引为 2）
-                        var tht git
-                        irdTagItem = tagItems[2];
+                       var irdTagItem = tagItems[2];
 
                         // 触发第三个 tag-item 的 click 事件
                         thirdTagItem.click();
